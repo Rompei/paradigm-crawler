@@ -7,8 +7,17 @@ import (
 	"os"
 )
 
-func crawl(url string, errCh chan error) {
-	doc, err := goquery.NewDocument(url)
+// BaseURL is url for wikipedia.
+const BaseURL = "https://en.wikipedia.org/wiki/"
+
+type Language struct{
+	Name string `json:"name"`
+	URL string `json:"url"`
+	Ansestors []Language`json:"ansestors"`
+}
+
+func crawl(l *Language, errCh chan error) {
+	doc, err := goquery.NewDocument(l.URL)
 	if err != nil {
 		errCh <- err
 		return
@@ -16,8 +25,9 @@ func crawl(url string, errCh chan error) {
 	var prevText string
 	doc.Find(".vevent").Find("tr").Each(func(i int, s *goquery.Selection) {
 		if prevText == "Influenced" {
-			fmt.Println(s.Text())
-			return
+			s.Find("td").Find("a").Each(func(i int, s *goquery.Selection){
+				fmt.Println(s.Text())
+			})
 		}
 		prevText = s.Find("th").Text()
 	})
@@ -34,7 +44,10 @@ func main() {
 	url := flag.Args()[0]
 
 	errCh := make(chan error)
-	go crawl(url, errCh)
+	go crawl(&Language{
+		URL:url,
+		Name:"C",
+	}, errCh)
 
 	err := <-errCh
 	if err != nil {
