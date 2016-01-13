@@ -67,6 +67,8 @@ func (c *CrawlChecker) Len() int {
 }
 
 func crawl(l *Language, c *CrawlChecker) (*Language, error) {
+
+	// Start crawling to the page.
 	doc, err := goquery.NewDocument(l.URL)
 	if err != nil {
 		return l, err
@@ -75,20 +77,29 @@ func crawl(l *Language, c *CrawlChecker) (*Language, error) {
 	doc.Find(".vevent").Find("tr").Each(func(i int, s *goquery.Selection) {
 		if prevText == "Influenced" {
 			s.Find("td").Find("a").Each(func(i int, s *goquery.Selection) {
+
+				// Getting href for next page.
 				href, ok := s.Attr("href")
 				if !ok {
 					fmt.Println("This page was wrong.")
 					return
 				}
+
+				// Getting name of the language.
 				name, ok := s.Attr("title")
 				if !ok {
 					fmt.Println("This page was wrong.")
 					return
 				}
 				if c.Len() == 0 {
+
+					// First time.
+
 					url := BaseURL + href
 					fmt.Printf("Start searching: %s, URL: %s\n", name, url)
 					desLang := NewLanguage(name, url)
+
+					// Add language to crawled languages.
 					c.AddCrawled(name)
 					desLang, err = crawl(desLang, c)
 					if err != nil {
@@ -99,6 +110,9 @@ func crawl(l *Language, c *CrawlChecker) (*Language, error) {
 					isExist := false
 					for _, v := range c.GetCrawled() {
 						if v == name {
+
+							// If the language was already crawled, it ignore that.
+
 							isExist = true
 						}
 					}
@@ -106,6 +120,8 @@ func crawl(l *Language, c *CrawlChecker) (*Language, error) {
 						url := BaseURL + href
 						fmt.Printf("Start searching: %s, URL: %s\n", name, url)
 						desLang := NewLanguage(name, url)
+
+						// Add language to crawled languages.
 						c.AddCrawled(name)
 						desLang, err = crawl(desLang, c)
 						if err != nil {
@@ -116,6 +132,8 @@ func crawl(l *Language, c *CrawlChecker) (*Language, error) {
 				}
 			})
 		}
+
+		// Take th text for searching row of Inflenced.
 		prevText = s.Find("th").Text()
 	})
 
@@ -123,6 +141,9 @@ func crawl(l *Language, c *CrawlChecker) (*Language, error) {
 }
 
 func dump(languageTree *Language, fname string) error {
+
+	// Storing language tree as JSON format.
+
 	b, err := json.Marshal(languageTree)
 	if err != nil {
 		return err
@@ -143,6 +164,9 @@ func dump(languageTree *Language, fname string) error {
 }
 
 func main() {
+
+	// Taking name and url of root language from argument.
+
 	flag.Parse()
 	if flag.NArg() != 2 {
 		fmt.Println("not enough argument")
@@ -150,11 +174,16 @@ func main() {
 	}
 	name := flag.Args()[0]
 	url := flag.Args()[1]
+
 	l := NewLanguage(name, url)
 	cc := NewCrawlChecker()
+
+	// Start crawling.
 	language, err := crawl(l, cc)
 	if err != nil {
 		fmt.Println(err)
 	}
+
+	// Store.
 	dump(language, "output.txt")
 }
