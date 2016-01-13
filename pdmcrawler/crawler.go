@@ -3,6 +3,7 @@ package pdmcrawler
 import (
 	"bytes"
 	"encoding/json"
+	"errors"
 	"fmt"
 	"github.com/PuerkitoBio/goquery"
 	"os"
@@ -169,6 +170,10 @@ func (cl *Crawler) trimName(src *string) {
 
 // Dump stores language tree as JSON.
 func (cl *Crawler) Dump(fname string) error {
+
+	if cl.LanguageTree == nil {
+		return errors.New("Language tree is not found.")
+	}
 
 	// Storing language tree as JSON format.
 
