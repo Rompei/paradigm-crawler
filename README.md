@@ -17,6 +17,6 @@ $ paradigm-crawler "C" "https://en.wikipedia.org/wiki/C_(programming_language)"
 
 
 ##TODO
-- [ ] Make module.
+- [x] Make module.
 - [ ] Define file name from argument.
 
