@@ -6,17 +6,17 @@ Paradigm-Crawler crawls programming paradigm from Wikipedia.
 ##Usage
 
 ```bash
-$ paradigm-crawler [Language-name] [Root-url(English page)]
+$ paradigm-crawler [Language-name] [Root-url(English page)] [output-file-name]
 ```
 
 ###Example
 
 ```bash
-$ paradigm-crawler "C" "https://en.wikipedia.org/wiki/C_(programming_language)"
+$ paradigm-crawler "C" "https://en.wikipedia.org/wiki/C_(programming_language)" "c.json"
 ```
 
 
 ##TODO
 - [x] Make module.
-- [ ] Define file name from argument.
+- [x] Define file name from argument.
 
