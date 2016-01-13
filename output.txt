@@ -32,7 +32,7 @@
 							"descendents": null
 						},
 						{
-							"name": "Tea (programming language)",
+							"name": "Tea ",
 							"url": "https://en.wikipedia.org/wiki/Tea_(programming_language)",
 							"descendents": null
 						}
@@ -43,21 +43,21 @@
 					"url": "https://en.wikipedia.org/wiki/Perl",
 					"descendents": [
 						{
-							"name": "Python (programming language)",
+							"name": "Python ",
 							"url": "https://en.wikipedia.org/wiki/Python_(programming_language)",
 							"descendents": [
 								{
-									"name": "Boo (programming language)",
+									"name": "Boo ",
 									"url": "https://en.wikipedia.org/wiki/Boo_(programming_language)",
 									"descendents": null
 								},
 								{
-									"name": "Cobra (programming language)",
+									"name": "Cobra ",
 									"url": "https://en.wikipedia.org/wiki/Cobra_(programming_language)",
 									"descendents": null
 								},
 								{
-									"name": "D (programming language)",
+									"name": "D ",
 									"url": "https://en.wikipedia.org/wiki/D_(programming_language)",
 									"descendents": [
 										{
@@ -66,48 +66,48 @@
 											"descendents": null
 										},
 										{
-											"name": "DScript (page does not exist)",
+											"name": "DScript ",
 											"url": "https://en.wikipedia.org/w/index.php?title=DScript\u0026action=edit\u0026redlink=1",
 											"descendents": null
 										},
 										{
-											"name": "Vala (programming language)",
+											"name": "Vala ",
 											"url": "https://en.wikipedia.org/wiki/Vala_(programming_language)",
 											"descendents": null
 										},
 										{
-											"name": "Qore Language (page does not exist)",
+											"name": "Qore Language ",
 											"url": "https://en.wikipedia.org/w/index.php?title=Qore_Language\u0026action=edit\u0026redlink=1",
 											"descendents": null
 										},
 										{
-											"name": "Swift (programming language)",
+											"name": "Swift ",
 											"url": "https://en.wikipedia.org/wiki/Swift_(programming_language)",
 											"descendents": [
 												{
-													"name": "Rust (programming language)",
+													"name": "Rust ",
 													"url": "https://en.wikipedia.org/wiki/Rust_(programming_language)",
 													"descendents": [
 														{
-															"name": "C Sharp (programming language)",
+															"name": "C Sharp ",
 															"url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
 															"descendents": [
 																{
-																	"name": "Dart (programming language)",
+																	"name": "Dart ",
 																	"url": "https://en.wikipedia.org/wiki/Dart_(programming_language)",
 																	"descendents": null
 																},
 																{
-																	"name": "F Sharp (programming language)",
+																	"name": "F Sharp ",
 																	"url": "https://en.wikipedia.org/wiki/F_Sharp_(programming_language)",
 																	"descendents": [
 																		{
-																			"name": "F* (programming language)",
+																			"name": "F* ",
 																			"url": "https://en.wikipedia.org/wiki/F*_(programming_language)",
 																			"descendents": null
 																		},
 																		{
-																			"name": "Elm (programming language)",
+																			"name": "Elm ",
 																			"url": "https://en.wikipedia.org/wiki/Elm_(programming_language)",
 																			"descendents": null
 																		},
@@ -119,11 +119,11 @@
 																	]
 																},
 																{
-																	"name": "Java (programming language)",
+																	"name": "Java ",
 																	"url": "https://en.wikipedia.org/wiki/Java_(programming_language)",
 																	"descendents": [
 																		{
-																			"name": "Ada (programming language)",
+																			"name": "Ada ",
 																			"url": "https://en.wikipedia.org/wiki/Ada_(programming_language)",
 																			"descendents": [
 																				{
@@ -131,15 +131,15 @@
 																					"url": "https://en.wikipedia.org/wiki/C%2B%2B",
 																					"descendents": [
 																						{
-																							"name": "Lua (programming language)",
+																							"name": "Lua ",
 																							"url": "https://en.wikipedia.org/wiki/Lua_(programming_language)",
 																							"descendents": [
 																								{
-																									"name": "Io (programming language)",
+																									"name": "Io ",
 																									"url": "https://en.wikipedia.org/wiki/Io_(programming_language)",
 																									"descendents": [
 																										{
-																											"name": "Ioke (programming language)",
+																											"name": "Ioke ",
 																											"url": "https://en.wikipedia.org/wiki/Ioke_(programming_language)",
 																											"descendents": null
 																										}
@@ -151,22 +151,22 @@
 																									"descendents": null
 																								},
 																								{
-																									"name": "Squirrel (programming language)",
+																									"name": "Squirrel ",
 																									"url": "https://en.wikipedia.org/wiki/Squirrel_(programming_language)",
 																									"descendents": null
 																								},
 																								{
-																									"name": "Falcon (programming language)",
+																									"name": "Falcon ",
 																									"url": "https://en.wikipedia.org/wiki/Falcon_(programming_language)",
 																									"descendents": null
 																								},
 																								{
-																									"name": "Julia (programming language)",
+																									"name": "Julia ",
 																									"url": "https://en.wikipedia.org/wiki/Julia_(programming_language)",
 																									"descendents": null
 																								},
 																								{
-																									"name": "Red (programming language)",
+																									"name": "Red ",
 																									"url": "https://en.wikipedia.org/wiki/Red_(programming_language)",
 																									"descendents": null
 																								}
@@ -177,7 +177,7 @@
 																							"url": "https://en.wikipedia.org/wiki/PHP",
 																							"descendents": [
 																								{
-																									"name": "Hack (programming language)",
+																									"name": "Hack ",
 																									"url": "https://en.wikipedia.org/wiki/Hack_(programming_language)",
 																									"descendents": null
 																								}
@@ -191,7 +191,7 @@
 																					]
 																				},
 																				{
-																					"name": "Eiffel (programming language)",
+																					"name": "Eiffel ",
 																					"url": "https://en.wikipedia.org/wiki/Eiffel_(programming_language)",
 																					"descendents": [
 																						{
@@ -200,11 +200,11 @@
 																							"descendents": null
 																						},
 																						{
-																							"name": "Racket (programming language)",
+																							"name": "Racket ",
 																							"url": "https://en.wikipedia.org/wiki/Racket_(programming_language)",
 																							"descendents": [
 																								{
-																									"name": "Scheme (programming language)",
+																									"name": "Scheme ",
 																									"url": "https://en.wikipedia.org/wiki/Scheme_(programming_language)",
 																									"descendents": [
 																										{
@@ -212,20 +212,20 @@
 																											"url": "https://en.wikipedia.org/wiki/Clojure",
 																											"descendents": [
 																												{
-																													"name": "Elixir (programming language)",
+																													"name": "Elixir ",
 																													"url": "https://en.wikipedia.org/wiki/Elixir_(programming_language)",
 																													"descendents": [
 																														{
-																															"name": "LFE (programming language)",
+																															"name": "LFE ",
 																															"url": "https://en.wikipedia.org/wiki/LFE_(programming_language)",
 																															"descendents": [
 																																{
-																																	"name": "Joxa (programming language) (page does not exist)",
+																																	"name": "Joxa  ",
 																																	"url": "https://en.wikipedia.org/w/index.php?title=Joxa_(programming_language)\u0026action=edit\u0026redlink=1",
 																																	"descendents": null
 																																},
 																																{
-																																	"name": "CSCM (programming language) (page does not exist)",
+																																	"name": "CSCM  ",
 																																	"url": "https://en.wikipedia.org/w/index.php?title=CSCM_(programming_language)\u0026action=edit\u0026redlink=1",
 																																	"descendents": null
 																																}
@@ -239,7 +239,7 @@
 																													"descendents": null
 																												},
 																												{
-																													"name": "Pixie (programming language)",
+																													"name": "Pixie ",
 																													"url": "https://en.wikipedia.org/wiki/Pixie_(programming_language)",
 																													"descendents": null
 																												}
@@ -250,46 +250,46 @@
 																											"url": "https://en.wikipedia.org/wiki/Common_Lisp",
 																											"descendents": [
 																												{
-																													"name": "Dylan (programming language)",
+																													"name": "Dylan ",
 																													"url": "https://en.wikipedia.org/wiki/Dylan_(programming_language)",
 																													"descendents": [
 																														{
-																															"name": "Goo (programming language)",
+																															"name": "Goo ",
 																															"url": "https://en.wikipedia.org/wiki/Goo_(programming_language)",
 																															"descendents": null
 																														},
 																														{
-																															"name": "Lasso (programming language)",
+																															"name": "Lasso ",
 																															"url": "https://en.wikipedia.org/wiki/Lasso_(programming_language)",
 																															"descendents": null
 																														},
 																														{
-																															"name": "Ruby (programming language)",
+																															"name": "Ruby ",
 																															"url": "https://en.wikipedia.org/wiki/Ruby_(programming_language)",
 																															"descendents": [
 																																{
-																																	"name": "Groovy (programming language)",
+																																	"name": "Groovy ",
 																																	"url": "https://en.wikipedia.org/wiki/Groovy_(programming_language)",
 																																	"descendents": [
 																																		{
-																																			"name": "Kotlin (programming language)",
+																																			"name": "Kotlin ",
 																																			"url": "https://en.wikipedia.org/wiki/Kotlin_(programming_language)",
 																																			"descendents": null
 																																		}
 																																	]
 																																},
 																																{
-																																	"name": "Mirah (programming language)",
+																																	"name": "Mirah ",
 																																	"url": "https://en.wikipedia.org/wiki/Mirah_(programming_language)",
 																																	"descendents": null
 																																},
 																																{
-																																	"name": "Nu (programming language)",
+																																	"name": "Nu ",
 																																	"url": "https://en.wikipedia.org/wiki/Nu_(programming_language)",
 																																	"descendents": null
 																																},
 																																{
-																																	"name": "Reia (programming language)",
+																																	"name": "Reia ",
 																																	"url": "https://en.wikipedia.org/wiki/Reia_(programming_language)",
 																																	"descendents": null
 																																}
@@ -319,7 +319,7 @@
 																													"descendents": null
 																												},
 																												{
-																													"name": "R (programming language)",
+																													"name": "R ",
 																													"url": "https://en.wikipedia.org/wiki/R_(programming_language)",
 																													"descendents": null
 																												},
@@ -336,7 +336,7 @@
 																											]
 																										},
 																										{
-																											"name": "Haskell (programming language)",
+																											"name": "Haskell ",
 																											"url": "https://en.wikipedia.org/wiki/Haskell_(programming_language)",
 																											"descendents": [
 																												{
@@ -344,7 +344,7 @@
 																													"url": "https://en.wikipedia.org/wiki/Agda_(theorem_prover)",
 																													"descendents": [
 																														{
-																															"name": "Idris (programming language)",
+																															"name": "Idris ",
 																															"url": "https://en.wikipedia.org/wiki/Idris_(programming_language)",
 																															"descendents": null
 																														}
@@ -381,12 +381,12 @@
 																													"descendents": null
 																												},
 																												{
-																													"name": "Cayenne (programming language)",
+																													"name": "Cayenne ",
 																													"url": "https://en.wikipedia.org/wiki/Cayenne_(programming_language)",
 																													"descendents": null
 																												},
 																												{
-																													"name": "Clean (programming language)",
+																													"name": "Clean ",
 																													"url": "https://en.wikipedia.org/wiki/Clean_(programming_language)",
 																													"descendents": null
 																												},
@@ -396,22 +396,22 @@
 																													"descendents": null
 																												},
 																												{
-																													"name": "Curry (programming language)",
+																													"name": "Curry ",
 																													"url": "https://en.wikipedia.org/wiki/Curry_(programming_language)",
 																													"descendents": null
 																												},
 																												{
-																													"name": "Epigram (programming language)",
+																													"name": "Epigram ",
 																													"url": "https://en.wikipedia.org/wiki/Epigram_(programming_language)",
 																													"descendents": null
 																												},
 																												{
-																													"name": "Escher (programming language)",
+																													"name": "Escher ",
 																													"url": "https://en.wikipedia.org/wiki/Escher_(programming_language)",
 																													"descendents": null
 																												},
 																												{
-																													"name": "Frege (programming language)",
+																													"name": "Frege ",
 																													"url": "https://en.wikipedia.org/wiki/Frege_(programming_language)",
 																													"descendents": null
 																												},
@@ -426,7 +426,7 @@
 																													"descendents": null
 																												},
 																												{
-																													"name": "Mercury (programming language)",
+																													"name": "Mercury ",
 																													"url": "https://en.wikipedia.org/wiki/Mercury_(programming_language)",
 																													"descendents": null
 																												},
@@ -441,11 +441,11 @@
 																													"descendents": null
 																												},
 																												{
-																													"name": "Scala (programming language)",
+																													"name": "Scala ",
 																													"url": "https://en.wikipedia.org/wiki/Scala_(programming_language)",
 																													"descendents": [
 																														{
-																															"name": "Fantom (programming language)",
+																															"name": "Fantom ",
 																															"url": "https://en.wikipedia.org/wiki/Fantom_(programming_language)",
 																															"descendents": null
 																														},
@@ -462,7 +462,7 @@
 																													"descendents": null
 																												},
 																												{
-																													"name": "Timber (programming language)",
+																													"name": "Timber ",
 																													"url": "https://en.wikipedia.org/wiki/Timber_(programming_language)",
 																													"descendents": null
 																												},
@@ -527,7 +527,7 @@
 																											]
 																										},
 																										{
-																											"name": "S (programming language)",
+																											"name": "S ",
 																											"url": "https://en.wikipedia.org/wiki/S_(programming_language)",
 																											"descendents": null
 																										}
@@ -540,7 +540,7 @@
 																							"url": "https://en.wikipedia.org/wiki/Sather",
 																							"descendents": [
 																								{
-																									"name": "Cool (programming language)",
+																									"name": "Cool ",
 																									"url": "https://en.wikipedia.org/wiki/Cool_(programming_language)",
 																									"descendents": [
 																										{
@@ -548,17 +548,17 @@
 																											"url": "https://en.wikipedia.org/wiki/OCaml",
 																											"descendents": [
 																												{
-																													"name": "ATS (programming language)",
+																													"name": "ATS ",
 																													"url": "https://en.wikipedia.org/wiki/ATS_(programming_language)",
 																													"descendents": null
 																												},
 																												{
-																													"name": "Opa (programming language)",
+																													"name": "Opa ",
 																													"url": "https://en.wikipedia.org/wiki/Opa_(programming_language)",
 																													"descendents": null
 																												},
 																												{
-																													"name": "Haxe (programming language)",
+																													"name": "Haxe ",
 																													"url": "https://en.wikipedia.org/wiki/Haxe_(programming_language)",
 																													"descendents": null
 																												}
@@ -591,7 +591,7 @@
 																					"descendents": null
 																				},
 																				{
-																					"name": "Nim (programming language)",
+																					"name": "Nim ",
 																					"url": "https://en.wikipedia.org/wiki/Nim_(programming_language)",
 																					"descendents": null
 																				},
@@ -620,7 +620,7 @@
 																	]
 																},
 																{
-																	"name": "Monkey (programming language)",
+																	"name": "Monkey ",
 																	"url": "https://en.wikipedia.org/wiki/Monkey_(programming_language)",
 																	"descendents": null
 																},
@@ -636,14 +636,14 @@
 											]
 										},
 										{
-											"name": "Genie (programming language)",
+											"name": "Genie ",
 											"url": "https://en.wikipedia.org/wiki/Genie_(programming_language)",
 											"descendents": null
 										}
 									]
 								},
 								{
-									"name": "Go (programming language)",
+									"name": "Go ",
 									"url": "https://en.wikipedia.org/wiki/Go_(programming_language)",
 									"descendents": null
 								}
@@ -655,18 +655,18 @@
 							"descendents": null
 						},
 						{
-							"name": "LPC (programming language)",
+							"name": "LPC ",
 							"url": "https://en.wikipedia.org/wiki/LPC_(programming_language)",
 							"descendents": [
 								{
-									"name": "Pike (programming language)",
+									"name": "Pike ",
 									"url": "https://en.wikipedia.org/wiki/Pike_(programming_language)",
 									"descendents": null
 								}
 							]
 						},
 						{
-							"name": "Qore (programming language) (page does not exist)",
+							"name": "Qore  ",
 							"url": "https://en.wikipedia.org/w/index.php?title=Qore_(programming_language)\u0026action=edit\u0026redlink=1",
 							"descendents": null
 						}
@@ -706,7 +706,7 @@
 			"descendents": null
 		},
 		{
-			"name": "Limbo (programming language)",
+			"name": "Limbo ",
 			"url": "https://en.wikipedia.org/wiki/Limbo_(programming_language)",
 			"descendents": [
 				{
@@ -717,7 +717,7 @@
 			]
 		},
 		{
-			"name": "Processing (programming language)",
+			"name": "Processing ",
 			"url": "https://en.wikipedia.org/wiki/Processing_(programming_language)",
 			"descendents": null
 		},

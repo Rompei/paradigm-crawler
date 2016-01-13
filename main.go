@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"github.com/PuerkitoBio/goquery"
 	"os"
+	"regexp"
 	"strings"
 )
 
@@ -91,6 +92,9 @@ func crawl(l *Language, c *CrawlChecker) (*Language, error) {
 					fmt.Println("This page was wrong.")
 					return
 				}
+
+				// Triming name.
+				trimName(&name)
 				if c.Len() == 0 {
 
 					// First time.
@@ -138,6 +142,11 @@ func crawl(l *Language, c *CrawlChecker) (*Language, error) {
 	})
 
 	return l, nil
+}
+
+func trimName(src *string) {
+	re, _ := regexp.Compile(`\(programming language\)|\(page does not exist\)`)
+	*src = re.ReplaceAllString(*src, "")
 }
 
 func dump(languageTree *Language, fname string) error {
