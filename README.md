@@ -1,5 +1,7 @@
 #Paradigm-Crawler
 
+
+Doc](https://godoc.org/github.com/Rompei/paradigm-crawler?status.png)](https://godoc.org/github.com/Rompei/paradigm-crawler)
 Paradigm-Crawler crawls programming paradigm from Wikipedia.
 
 
