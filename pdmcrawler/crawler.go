@@ -1,12 +1,13 @@
 package pdmcrawler
 
 import (
-	"bytes"
 	"encoding/json"
 	"errors"
 	"fmt"
 	"github.com/PuerkitoBio/goquery"
+	"io/ioutil"
 	"os"
+	"path/filepath"
 	"regexp"
 	"strings"
 	"time"
@@ -120,11 +121,10 @@ func (cl *Crawler) crawlCore(l *Language, c *CrawlChecker) (*Language, error) {
 
 					url := BaseURL + href
 					fmt.Printf("Start searching: %s, URL: %s\n", name, url)
-					desLang := NewLanguage(name, url)
 
 					// Add language to crawled languages.
 					c.AddCrawled(name)
-					desLang, err = cl.crawlCore(desLang, c)
+					desLang, err := cl.crawlCore(NewLanguage(name, url), c)
 					if err != nil {
 						fmt.Println(err)
 					}
@@ -142,15 +142,16 @@ func (cl *Crawler) crawlCore(l *Language, c *CrawlChecker) (*Language, error) {
 					if !isExist {
 						url := BaseURL + href
 						fmt.Printf("Start searching: %s, URL: %s\n", name, url)
-						desLang := NewLanguage(name, url)
 
 						// Add language to crawled languages.
 						c.AddCrawled(name)
-						desLang, err = cl.crawlCore(desLang, c)
+						desLang, err := cl.crawlCore(NewLanguage(name, url), c)
 						if err != nil {
 							fmt.Println(err)
 						}
 						l.Descendents = append(l.Descendents, *desLang)
+					} else {
+						fmt.Println("The language is already exist.")
 					}
 				}
 			})
@@ -178,21 +179,18 @@ func (cl *Crawler) Dump(fname string) error {
 	// Storing language tree as JSON format.
 
 	cl.Time = time.Now()
-	b, err := json.Marshal(cl)
+	b, err := json.MarshalIndent(cl, "", "\t")
 	if err != nil {
 		return err
 	}
 
-	var out bytes.Buffer
-	json.Indent(&out, b, "", "\t")
-
-	file, err := os.OpenFile(fname, os.O_WRONLY|os.O_CREATE, 0600)
-	if err != nil {
-		return err
+	if err = ioutil.WriteFile(fname, b, os.ModePerm); err != nil {
+		if err = os.MkdirAll(filepath.Dir(fname), os.ModePerm); err != nil {
+			return err
+		}
+		if err = ioutil.WriteFile(fname, b, os.ModePerm); err != nil {
+			return err
+		}
 	}
-
-	defer file.Close()
-	file.Truncate(0)
-	out.WriteTo(file)
 	return nil
 }
