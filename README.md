@@ -22,4 +22,5 @@ $ paradigm-crawler "C" "https://en.wikipedia.org/wiki/C_(programming_language)" 
 ##TODO
 - [x] Make module.
 - [x] Define file name from argument.
+- [ ] Judge crawled language with URL. 
 
