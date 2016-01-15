@@ -56,8 +56,12 @@ type CrawlChecker struct {
 }
 
 // NewCrawlChecker is constructot of CrawlChecker.
-func NewCrawlChecker() *CrawlChecker {
-	return &CrawlChecker{}
+func NewCrawlChecker(rootURL string) *CrawlChecker {
+	cl := &CrawlChecker{
+		crawled: make([]string, 1),
+	}
+	cl.crawled[0] = rootURL
+	return cl
 }
 
 // AddCrawled adds crawled language to crawled.
@@ -105,6 +109,7 @@ func (cl *Crawler) crawlCore(l *Language, c *CrawlChecker) (*Language, error) {
 					fmt.Println("This page was wrong.")
 					return
 				}
+				url := BaseURL + href
 
 				// Getting name of the language.
 				name, ok := s.Attr("title")
@@ -119,11 +124,10 @@ func (cl *Crawler) crawlCore(l *Language, c *CrawlChecker) (*Language, error) {
 
 					// First time.
 
-					url := BaseURL + href
 					fmt.Printf("Start searching: %s, URL: %s\n", name, url)
 
 					// Add language to crawled languages.
-					c.AddCrawled(name)
+					c.AddCrawled(url)
 					desLang, err := cl.crawlCore(NewLanguage(name, url), c)
 					if err != nil {
 						fmt.Println(err)
@@ -132,7 +136,7 @@ func (cl *Crawler) crawlCore(l *Language, c *CrawlChecker) (*Language, error) {
 				} else {
 					isExist := false
 					for _, v := range c.GetCrawled() {
-						if v == name {
+						if v == url {
 
 							// If the language was already crawled, it ignore that.
 
@@ -140,11 +144,10 @@ func (cl *Crawler) crawlCore(l *Language, c *CrawlChecker) (*Language, error) {
 						}
 					}
 					if !isExist {
-						url := BaseURL + href
 						fmt.Printf("Start searching: %s, URL: %s\n", name, url)
 
 						// Add language to crawled languages.
-						c.AddCrawled(name)
+						c.AddCrawled(url)
 						desLang, err := cl.crawlCore(NewLanguage(name, url), c)
 						if err != nil {
 							fmt.Println(err)

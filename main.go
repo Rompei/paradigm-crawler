@@ -22,7 +22,7 @@ func main() {
 
 	// Start crawling.
 	crawler := pdmcrawler.NewCrawler()
-	_, err := crawler.Crawl(pdmcrawler.NewLanguage(name, url), pdmcrawler.NewCrawlChecker())
+	_, err := crawler.Crawl(pdmcrawler.NewLanguage(name, url), pdmcrawler.NewCrawlChecker(url))
 	if err != nil {
 		fmt.Println(err)
 	}
